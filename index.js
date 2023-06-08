@@ -60,7 +60,7 @@ async function connectWallet() {
     //기본적으로 모든 Balance 정보들은 wei 단위로 오게됩니다. 이를 ether 단위로 변경하려면 아래 util을 사용하거나 10의18승을 곱해주어야 합니다.
     //아래는 민팅에 필요한 최소비용보다 보유한 ether가 적을경우 지갑이 연결되지 않도록 하는 함수입니다.
     isConnected = true;
-    document.getElementById("txtMintBtn").innerHTML = "Mint";
+    document.getElementById("txtMintBtn").innerHTML = "Mint buy";
     document.getElementById("txtWalletBalance").innerHTML = web3.utils.fromWei(WalletBalance).substr(0,8);
     var txtAccount = accounts[0].substr(0,5)+'...'+accounts[0].substr(37,42);
     document.getElementById("txtConnectWalletBtn").innerHTML = txtAccount;
